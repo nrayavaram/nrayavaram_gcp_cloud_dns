@@ -5,7 +5,7 @@ provider "google" {
 
 resource "google_dns_managed_zone" "private-zone" {
   name        = "wf-us-prod-dns-gcp-res123"
-  dns_name    = "private.example.com."
+#  dns_name    = "private.example.com."
   description = "Example private DNS zone"
   labels = {
     foo = "bar"
