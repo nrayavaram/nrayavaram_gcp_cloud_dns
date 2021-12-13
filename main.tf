@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_dns_managed_zone" "private-zone" {
-  name        = "on-dev-appid-syst-bkonprem-ivlan"
+  name        = "wf-us-prod-dns-gcp-res123"
   dns_name    = "wf-us-prod-dns-gcp-res123"
   description = "Example private DNS zone"
   labels = {
