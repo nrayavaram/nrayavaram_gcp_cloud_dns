@@ -25,14 +25,14 @@ resource "google_dns_managed_zone" "private-zone" {
 
 resource "google_compute_network" "network-1" {
   name                    = "wf-us-prod-dns-gcp-net123"
-  #mtu                     = 1500
+  mtu                     = 1500
   auto_create_subnetworks = false
   delete_default_routes_on_create = true
 }
 
 resource "google_compute_network" "network-2" {
   name                    = "wf-us-prod-dns-gcp-net223"
-  #mtu                     = 1500
+  mtu                     = 1500
   auto_create_subnetworks = false
   delete_default_routes_on_create = true
 }
