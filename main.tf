@@ -24,11 +24,11 @@ resource "google_dns_managed_zone" "private-zone" {
 }
 
 resource "google_compute_network" "network-1" {
-  name                    = "network-1"
+  name                    = "wf-us-prod-dns-gcp-net123"
   auto_create_subnetworks = false
 }
 
 resource "google_compute_network" "network-2" {
-  name                    = "network-2"
+  name                    = "wf-us-prod-dns-gcp-net223"
   auto_create_subnetworks = false
 }
