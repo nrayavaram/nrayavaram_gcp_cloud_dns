@@ -1,0 +1,578 @@
+terraform_version = "1.1.0"
+
+planned_values = {
+	"outputs": {},
+	"resources": {
+		"google_compute_network.network-1": {
+			"address":        "google_compute_network.network-1",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "network-1",
+			"provider_name":  "registry.terraform.io/hashicorp/google",
+			"tainted":        false,
+			"type":           "google_compute_network",
+			"values": {
+				"auto_create_subnetworks":         false,
+				"delete_default_routes_on_create": true,
+				"description":                     null,
+				"mtu":                             1500,
+				"name":                            "network-1",
+				"timeouts":                        null,
+			},
+		},
+		"google_compute_network.network-2": {
+			"address":        "google_compute_network.network-2",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "network-2",
+			"provider_name":  "registry.terraform.io/hashicorp/google",
+			"tainted":        false,
+			"type":           "google_compute_network",
+			"values": {
+				"auto_create_subnetworks":         false,
+				"delete_default_routes_on_create": true,
+				"description":                     null,
+				"mtu":                             1500,
+				"name":                            "network-2",
+				"timeouts":                        null,
+			},
+		},
+		"google_dns_policy.example-policy": {
+			"address":        "google_dns_policy.example-policy",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "example-policy",
+			"provider_name":  "registry.terraform.io/hashicorp/google",
+			"tainted":        false,
+			"type":           "google_dns_policy",
+			"values": {
+				"alternative_name_server_config": [
+					{
+						"target_name_servers": [
+							{
+								"forwarding_path": "",
+								"ipv4_address":    "172.16.1.20",
+							},
+							{
+								"forwarding_path": "private",
+								"ipv4_address":    "172.16.1.10",
+							},
+						],
+					},
+				],
+				"description":               "Managed by Terraform",
+				"enable_inbound_forwarding": true,
+				"enable_logging":            true,
+				"name":                      "wf-us-core-dns-gcp-res123",
+				"networks": [
+					{},
+					{},
+				],
+				"timeouts": null,
+			},
+		},
+	},
+}
+
+variables = {
+	"access_token": {
+		"name":  "access_token",
+		"value": "REDACTED_SENSITIVE",
+	},
+}
+
+resource_changes = {
+	"google_compute_network.network-1": {
+		"address": "google_compute_network.network-1",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"auto_create_subnetworks":         false,
+				"delete_default_routes_on_create": true,
+				"description":                     null,
+				"mtu":                             1500,
+				"name":                            "network-1",
+				"timeouts":                        null,
+			},
+			"after_unknown": {
+				"gateway_ipv4": true,
+				"id":           true,
+				"project":      true,
+				"routing_mode": true,
+				"self_link":    true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "network-1",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_compute_network",
+	},
+	"google_compute_network.network-2": {
+		"address": "google_compute_network.network-2",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"auto_create_subnetworks":         false,
+				"delete_default_routes_on_create": true,
+				"description":                     null,
+				"mtu":                             1500,
+				"name":                            "network-2",
+				"timeouts":                        null,
+			},
+			"after_unknown": {
+				"gateway_ipv4": true,
+				"id":           true,
+				"project":      true,
+				"routing_mode": true,
+				"self_link":    true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "network-2",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_compute_network",
+	},
+	"google_dns_policy.example-policy": {
+		"address": "google_dns_policy.example-policy",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"alternative_name_server_config": [
+					{
+						"target_name_servers": [
+							{
+								"forwarding_path": "",
+								"ipv4_address":    "172.16.1.20",
+							},
+							{
+								"forwarding_path": "private",
+								"ipv4_address":    "172.16.1.10",
+							},
+						],
+					},
+				],
+				"description":               "Managed by Terraform",
+				"enable_inbound_forwarding": true,
+				"enable_logging":            true,
+				"name":                      "wf-us-core-dns-gcp-res123",
+				"networks": [
+					{},
+					{},
+				],
+				"timeouts": null,
+			},
+			"after_unknown": {
+				"alternative_name_server_config": [
+					{
+						"target_name_servers": [
+							{},
+							{},
+						],
+					},
+				],
+				"id": true,
+				"networks": [
+					{
+						"network_url": true,
+					},
+					{
+						"network_url": true,
+					},
+				],
+				"project": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "example-policy",
+		"provider_name":  "registry.terraform.io/hashicorp/google",
+		"type":           "google_dns_policy",
+	},
+}
+
+output_changes = {}
+
+raw = {
+	"configuration": {
+		"provider_config": {
+			"google": {
+				"expressions": {
+					"access_token": {
+						"references": [
+							"var.access_token",
+						],
+					},
+					"project": {
+						"constant_value": "airline1-sabre-wolverine",
+					},
+				},
+				"name": "google",
+			},
+		},
+		"root_module": {
+			"resources": [
+				{
+					"address": "google_compute_network.network-1",
+					"expressions": {
+						"auto_create_subnetworks": {
+							"constant_value": false,
+						},
+						"delete_default_routes_on_create": {
+							"constant_value": true,
+						},
+						"mtu": {
+							"constant_value": 1500,
+						},
+						"name": {
+							"constant_value": "network-1",
+						},
+					},
+					"mode":                "managed",
+					"name":                "network-1",
+					"provider_config_key": "google",
+					"schema_version":      0,
+					"type":                "google_compute_network",
+				},
+				{
+					"address": "google_compute_network.network-2",
+					"expressions": {
+						"auto_create_subnetworks": {
+							"constant_value": false,
+						},
+						"delete_default_routes_on_create": {
+							"constant_value": true,
+						},
+						"mtu": {
+							"constant_value": 1500,
+						},
+						"name": {
+							"constant_value": "network-2",
+						},
+					},
+					"mode":                "managed",
+					"name":                "network-2",
+					"provider_config_key": "google",
+					"schema_version":      0,
+					"type":                "google_compute_network",
+				},
+				{
+					"address": "google_dns_policy.example-policy",
+					"expressions": {
+						"alternative_name_server_config": [
+							{
+								"target_name_servers": [
+									{
+										"forwarding_path": {
+											"constant_value": "private",
+										},
+										"ipv4_address": {
+											"constant_value": "172.16.1.10",
+										},
+									},
+									{
+										"ipv4_address": {
+											"constant_value": "172.16.1.20",
+										},
+									},
+								],
+							},
+						],
+						"enable_inbound_forwarding": {
+							"constant_value": true,
+						},
+						"enable_logging": {
+							"constant_value": true,
+						},
+						"name": {
+							"constant_value": "wf-us-core-dns-gcp-res123",
+						},
+						"networks": [
+							{
+								"network_url": {
+									"references": [
+										"google_compute_network.network-1.id",
+										"google_compute_network.network-1",
+									],
+								},
+							},
+							{
+								"network_url": {
+									"references": [
+										"google_compute_network.network-2.id",
+										"google_compute_network.network-2",
+									],
+								},
+							},
+						],
+					},
+					"mode":                "managed",
+					"name":                "example-policy",
+					"provider_config_key": "google",
+					"schema_version":      0,
+					"type":                "google_dns_policy",
+				},
+			],
+			"variables": {
+				"access_token": {
+					"description": "access token",
+					"sensitive":   true,
+				},
+			},
+		},
+	},
+	"format_version": "1.0",
+	"planned_values": {
+		"root_module": {
+			"resources": [
+				{
+					"address":          "google_compute_network.network-1",
+					"mode":             "managed",
+					"name":             "network-1",
+					"provider_name":    "registry.terraform.io/hashicorp/google",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "google_compute_network",
+					"values": {
+						"auto_create_subnetworks":         false,
+						"delete_default_routes_on_create": true,
+						"description":                     null,
+						"mtu":                             1500,
+						"name":                            "network-1",
+						"timeouts":                        null,
+					},
+				},
+				{
+					"address":          "google_compute_network.network-2",
+					"mode":             "managed",
+					"name":             "network-2",
+					"provider_name":    "registry.terraform.io/hashicorp/google",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "google_compute_network",
+					"values": {
+						"auto_create_subnetworks":         false,
+						"delete_default_routes_on_create": true,
+						"description":                     null,
+						"mtu":                             1500,
+						"name":                            "network-2",
+						"timeouts":                        null,
+					},
+				},
+				{
+					"address":        "google_dns_policy.example-policy",
+					"mode":           "managed",
+					"name":           "example-policy",
+					"provider_name":  "registry.terraform.io/hashicorp/google",
+					"schema_version": 0,
+					"sensitive_values": {
+						"alternative_name_server_config": [
+							{
+								"target_name_servers": [
+									{},
+									{},
+								],
+							},
+						],
+						"networks": [
+							{},
+							{},
+						],
+					},
+					"type": "google_dns_policy",
+					"values": {
+						"alternative_name_server_config": [
+							{
+								"target_name_servers": [
+									{
+										"forwarding_path": "",
+										"ipv4_address":    "172.16.1.20",
+									},
+									{
+										"forwarding_path": "private",
+										"ipv4_address":    "172.16.1.10",
+									},
+								],
+							},
+						],
+						"description":               "Managed by Terraform",
+						"enable_inbound_forwarding": true,
+						"enable_logging":            true,
+						"name":                      "wf-us-core-dns-gcp-res123",
+						"networks": [
+							{},
+							{},
+						],
+						"timeouts": null,
+					},
+				},
+			],
+		},
+	},
+	"resource_changes": [
+		{
+			"address": "google_compute_network.network-1",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"auto_create_subnetworks":         false,
+					"delete_default_routes_on_create": true,
+					"description":                     null,
+					"mtu":                             1500,
+					"name":                            "network-1",
+					"timeouts":                        null,
+				},
+				"after_sensitive": {},
+				"after_unknown": {
+					"gateway_ipv4": true,
+					"id":           true,
+					"project":      true,
+					"routing_mode": true,
+					"self_link":    true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "network-1",
+			"provider_name": "registry.terraform.io/hashicorp/google",
+			"type":          "google_compute_network",
+		},
+		{
+			"address": "google_compute_network.network-2",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"auto_create_subnetworks":         false,
+					"delete_default_routes_on_create": true,
+					"description":                     null,
+					"mtu":                             1500,
+					"name":                            "network-2",
+					"timeouts":                        null,
+				},
+				"after_sensitive": {},
+				"after_unknown": {
+					"gateway_ipv4": true,
+					"id":           true,
+					"project":      true,
+					"routing_mode": true,
+					"self_link":    true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "network-2",
+			"provider_name": "registry.terraform.io/hashicorp/google",
+			"type":          "google_compute_network",
+		},
+		{
+			"address": "google_dns_policy.example-policy",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"alternative_name_server_config": [
+						{
+							"target_name_servers": [
+								{
+									"forwarding_path": "",
+									"ipv4_address":    "172.16.1.20",
+								},
+								{
+									"forwarding_path": "private",
+									"ipv4_address":    "172.16.1.10",
+								},
+							],
+						},
+					],
+					"description":               "Managed by Terraform",
+					"enable_inbound_forwarding": true,
+					"enable_logging":            true,
+					"name":                      "wf-us-core-dns-gcp-res123",
+					"networks": [
+						{},
+						{},
+					],
+					"timeouts": null,
+				},
+				"after_sensitive": {
+					"alternative_name_server_config": [
+						{
+							"target_name_servers": [
+								{},
+								{},
+							],
+						},
+					],
+					"networks": [
+						{},
+						{},
+					],
+				},
+				"after_unknown": {
+					"alternative_name_server_config": [
+						{
+							"target_name_servers": [
+								{},
+								{},
+							],
+						},
+					],
+					"id": true,
+					"networks": [
+						{
+							"network_url": true,
+						},
+						{
+							"network_url": true,
+						},
+					],
+					"project": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "example-policy",
+			"provider_name": "registry.terraform.io/hashicorp/google",
+			"type":          "google_dns_policy",
+		},
+	],
+	"terraform_version": "1.1.0",
+	"variables": {
+		"access_token": {
+			"value": "REDACTED_SENSITIVE",
+		},
+	},
+}

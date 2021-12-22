@@ -1,0 +1,22 @@
+{
+	"records": [
+		{
+			"key": "tfstate-functions",
+			"source": "./common-functions/tfstate-functions/tfstate-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfstate-functions/tfstate-functions.sentinel"
+		},
+		{
+			"key": "tfconfig-functions",
+			"source": "./common-functions/tfconfig-functions/tfconfig-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+		},
+		{
+			"key": "tfplan-functions",
+			"source": "./common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		}
+	]
+}

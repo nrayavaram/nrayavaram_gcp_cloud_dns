@@ -1,0 +1,40 @@
+{
+	"records": [
+		{
+			"key": "test/network_gcp_dns_log_enforce/success/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_dns_log_enforce/null/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gcp_dns_logging/success/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gcp_dns_logging/failure/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/gcp_dns_logging/null/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/network_gcp_dns_log_enforce/failure/tfplan-functions",
+			"source": "../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		}
+	]
+}

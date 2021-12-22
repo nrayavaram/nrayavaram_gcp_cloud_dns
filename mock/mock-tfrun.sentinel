@@ -1,0 +1,37 @@
+id = "run-vPKM29Y6t4Rnvxi9"
+created_at = "2021-12-20T05:53:07.167Z"
+message = "Triggered via UI"
+commit_sha = "828ec344bae8fc1b8d8194bc82a4a95b4085fecd"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"access_token": {
+		"category":  "terraform",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "ashwinkumarnaik91",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2021-12-10T12:16:40.337Z",
+	"description": null,
+	"id":          "ws-goybpw7gb4ise47t",
+	"name":        "nrayavaram_gcp_cloud_dns",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "nrayavaram/nrayavaram_gcp_cloud_dns",
+		"identifier":         "nrayavaram/nrayavaram_gcp_cloud_dns",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}

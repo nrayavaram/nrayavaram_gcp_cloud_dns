@@ -1,0 +1,10 @@
+{
+	"records": [
+		{
+			"key": "google_compute_firewall",
+			"source": "./network_gcp_dns_log_enforce.sentinel",
+			"sourceSum": "",
+			"dest": "/home/nrayavaram/dns1/network_gcp_dns_log_enforce.sentinel"
+		}
+	]
+}

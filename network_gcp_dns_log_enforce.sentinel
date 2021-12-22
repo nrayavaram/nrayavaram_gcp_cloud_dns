@@ -1,0 +1,34 @@
+import "tfplan-functions" as plan
+import "strings"
+import "types"
+
+#allowable_load_balancer = "true"
+fwResources = plan.find_resources("google_dns_policy")
+#print(fwResources)
+
+
+messages = {}
+
+
+for fwResources as address,rc {
+    enable_logging = plan.evaluate_attribute(rc.change.after, "enable_logging")
+    #print("%%%%%%%%%%%%%%%",enable_logging)
+        if enable_logging is null or enable_logging is false {
+            message =(plan.to_string(enable_logging)+ " is not allowed , it should be true only")
+            if address in keys(messages) {
+                append(messages[address],message)
+            } else {
+                messages[address] = [message]}
+    }          
+
+}
+
+#print(fwResources)
+print(messages)
+
+
+
+GCP_log_dns = rule { length(messages) is 0 }
+
+
+main = rule { GCP_log_dns}
