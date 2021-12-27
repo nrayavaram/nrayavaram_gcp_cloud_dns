@@ -7,7 +7,7 @@ resource "google_dns_policy" "example-policy" {
   name                      = "wf-us-core-dns-gcp-res123"
   enable_inbound_forwarding = true
 
-  enable_logging = false
+  enable_logging = true
 
   alternative_name_server_config {
     target_name_servers {
